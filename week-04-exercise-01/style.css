@@ -1,10 +1,10 @@
 :root {
     color-scheme: dark;
-    --bg: #070b1f;
-    --panel: #111839;
+    --bg: #0c2610;
+    --panel: #173a1e;
     --text: #f7f8ff;
-    --accent: #ff5bd1;
-    --accent-2: #62f7ff;
+    --accent: #7bbf3f;
+    --accent-2: #d7ff8a;
 }
 
 * {
@@ -14,7 +14,7 @@
 body {
     margin: 0;
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, var(--bg), #1d2b7a 60%, #2c0f61);
+    background: linear-gradient(135deg, var(--bg), #2d6b2f 60%, #0f3f1f);
     color: var(--text);
     line-height: 1.6;
 }
@@ -52,7 +52,7 @@ h1 {
     padding: 0.8rem 1.2rem;
     border-radius: 999px;
     background: var(--accent);
-    color: #080511;
+    color: #081208;
     text-decoration: none;
     font-weight: 700;
 }
@@ -63,7 +63,7 @@ h1 {
 
 .description,
 .screenshot-card {
-    background: rgba(17, 24, 57, 0.95);
+    background: rgba(23, 58, 30, 0.95);
     border: 2px solid rgba(255, 255, 255, 0.12);
     border-radius: 1.5rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
@@ -88,6 +88,6 @@ h1 {
 
 figcaption {
     margin-top: 0.8rem;
-    color: #c7d2ff;
+    color: #d7ff8a;
     font-size: 0.95rem;
 }
