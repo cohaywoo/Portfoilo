@@ -70,6 +70,6 @@ for x0, y0, x1, y1, title, blurb in [
 footer = 'Dev Tools Edition • browser-only edits • refresh to lose them all'
 draw.text((90, 790), footer, font=font_small, fill='#3d6f31')
 
-out_path = Path('devtools-vandalism-screenshot.png')
+out_path = Path('minecraft-devtools-vandalism-screenshot.png')
 img.save(out_path)
 print(out_path)
