@@ -1,0 +1,139 @@
+:root {
+    color-scheme: dark;
+    --bg: #07111f;
+    --panel: rgba(12, 24, 42, 0.92);
+    --text: #f6f7fb;
+    --muted: #aab7cb;
+    --accent: #6ee7ff;
+    --accent-2: #8ef29d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(110, 231, 255, 0.16), transparent 26%),
+        linear-gradient(135deg, var(--bg), #14253d 70%, #0c1627);
+    min-height: 100vh;
+}
+
+.page-shell {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.hero {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin: 0 0 0.6rem;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.hero h2 {
+    margin: 0.4rem 0 0.8rem;
+    color: var(--accent-2);
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 680px;
+    line-height: 1.7;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.3rem;
+}
+
+.top-nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.top-nav a:hover {
+    background: rgba(110, 231, 255, 0.2);
+}
+
+main {
+    margin-top: 1.6rem;
+}
+
+.about,
+.card {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.25rem;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    margin-bottom: 1.2rem;
+}
+
+.about p,
+.card li,
+.card a {
+    color: var(--muted);
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--accent-2);
+}
+
+.card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.card li + li {
+    margin-top: 0.45rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--text);
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
